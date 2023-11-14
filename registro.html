@@ -13,29 +13,24 @@
 
         
     </div>
-    <div class="titulo">Crear cuenta</div>
+    <div class="titulo" >Crear cuenta</div>
     <form id="registro-form">
         <div class="input-container">
-            <label for="DNI">DNI</label>
-            <input type="text" id="DNI" name="DNI" required>
+            <input type="text" id="DNI" name="DNI" required placeholder="DNI"> 
+        </div>
+        <div class="input-container" >
+            <input type="text" id="Nombre" name="Nombre" required placeholder="Nombre de Usuario">
         </div>
         <div class="input-container">
-            <label for="Nombre">Nombre de usuario</label>
-            <input type="text" id="Nombre" name="Nombre" required>
+            <input type="date" id="FechaDeNacimiento" name="FechaDeNacimiento" required >
         </div>
         <div class="input-container">
-            <label for="FechaDeNacimiento">Fecha de Nacimiento</label>
-            <input type="date" id="FechaDeNacimiento" name="FechaDeNacimiento" required>
+            <input type="email" id="Correo" name="Correo" required placeholder="Correo Electrónico">
         </div>
         <div class="input-container">
-            <label for="Correo">Correo electronico</label>
-            <input type="email" id="Correo" name="Correo" required>
+            <input type="password" id="Contraseña" name="Contraseña" required placeholder="Contraseña">
         </div>
-        <div class="input-container">
-            <label for="Contraseña">Contraseña</label>
-            <input type="password" id="Contraseña" name="Contraseña" required>
-        </div>
-        <input type="submit" value="Registrarse" class="boton-registro">
+        <input type="submit" value="Registrarse" class="boton-registro" style="margin-top: 25px;">
 
     </form>
     <script src="funciones.js"></script>

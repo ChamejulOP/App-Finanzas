@@ -5,8 +5,8 @@ body {
 }
 .navbar {
     overflow: hidden;
-    background-color: #DF2BFC;
-    padding: 50px 10px 20px 10px;
+    background-color: #B74BB7;
+    height: 90px;
 }
 
 .navbar a {
@@ -24,7 +24,7 @@ body {
 }
 
 .titulo {
-    font-size: 24px;
+    font-size: 64px;
     font-weight: bold;
     margin-top: 50px;
 }
@@ -49,12 +49,13 @@ body {
 
 .boton {
     display: inline-block;
-    background-color: #DF2BFC;
+    background-color: #B74BB7;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 0 10px;
+    border-radius: 50px;
+    margin: 0 100px;
+    width: 411px;
+    height: 87px;
 }
 
 #registro-form{
@@ -64,7 +65,7 @@ body {
     align-items: center;
 }
 .input-container {
-    width: 300px;
+    width: 650px;
     padding: 12px 20px;
     align-items: center;
 }
@@ -78,28 +79,69 @@ input[type=text], input[type=password], input[type=date], input[type=email] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+    height: 62px;
+    font-size: 32px;
+    color: #9C9C9C;
 }
 
+::placeholder {
+    color: #9C9C9C; /* Cambia #ff0000 al código de color que desees */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+  }
+
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #B74BB7;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 712px;
+    height: 84px;
+    font-size: 32px;
 }
 
 input[type=submit]:hover {
     opacity: 0.8;
 }
 
+.boton.btnregistro {
+    font-size: 32px;
+}
+
+.boton.btniniciosesion{
+    font-size: 32px;
+}
+
+.texto-debajo-boton1{
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+    margin-right: 255px;
+    margin-left: 100px;
+}
+
+.texto-debajo-boton2{
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+    margin-left: 100px;
+    margin-right: 160px;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+
+/*-------------------------------*/
 .boton-registro {
     display: inline-block;
     background-color: #DF2BFC;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     margin: 0 10px;
 }
+  
