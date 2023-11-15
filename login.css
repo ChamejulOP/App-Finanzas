@@ -1,0 +1,181 @@
+/* Estilos generales de la navbar */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Estilos específicos del logo */
+        .navbar-logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* Otros estilos, si es necesario */
+        .titulo {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .input-container {
+            margin-bottom: 15px;
+        }
+
+        .boton-registro {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #B74BB7;
+    height: 90px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.titulo {
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.contenedor-imagen {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.botones {
+    margin-top: 50px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #B74BB7;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 0 100px;
+    width: 411px;
+    height: 87px;
+}
+
+#registro-form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container {
+    width: 650px;
+    padding: 12px 20px;
+    align-items: center;
+}
+
+
+
+input[type=text], input[type=password], input[type=date], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+    height: 62px;
+    font-size: 32px;
+    color: #9C9C9C;
+}
+
+::placeholder {
+    color: #9C9C9C; /* Cambia #ff0000 al código de color que desees */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+  }
+
+input[type=submit] {
+    background-color: #B74BB7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 712px;
+    height: 84px;
+    font-size: 32px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.boton.btnregistro {
+    font-size: 32px;
+}
+
+.boton.btniniciosesion{
+    font-size: 32px;
+}
+
+.texto-debajo-boton1{
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+    margin-right: 255px;
+    margin-left: 100px;
+}
+
+.texto-debajo-boton2{
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+    margin-left: 100px;
+    margin-right: 160px;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+
+/*-------------------------------*/
+.boton-registro {
+    display: inline-block;
+    background-color: #DF2BFC;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+  
