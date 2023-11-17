@@ -2,6 +2,10 @@ function navegarRegistro() {
     window.location.href = "registro.html";
 }
 
+function navegarLogin() {
+    window.location.href = "login.html";
+}
+
 document.getElementById("registro-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
