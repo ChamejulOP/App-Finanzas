@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Lilita+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+body{
+    margin: 0;
+    font-family: 'Lilita One', sans-serif;
+    text-align: center;
+
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #B74BB7;
+    height: auto; 
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.back-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 1.5rem;
+    width: 8rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 2px solid black;
+
+}
+.back-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar img{
+    height: 10rem;
+}
+.welcome-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome-message .username{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.welcome{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.date{
+    display:flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+   
+}
+.form{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.left-side{
+    display: flex;
+    width: 50%;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-side{
+    display: flex;
+    width: 50%;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.field{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.field:last-child {
+    margin-bottom: 0;
+}
+.field span{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+}
+.field input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    background-color: #f5f5f5;
+    padding: 16px;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.button input{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 30%;
+    border: 2px solid #B74BB7;
+    outline: none;
+    background: #B74BB7;
+    padding: 16px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.form .left-side .field input:focus ~ span,
+.form .left-side .field input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.form .right-side .field input:focus ~ span,
+.form .right-side .field input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}

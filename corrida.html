@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida</title>
+    <link rel="stylesheet" href="corrida.css">
+</head>
+<body>
+    <header>
+       <nav class="navbar">
+        <div class="back-button">
+            <a>Volver</a>
+        </div>
+        <div class="welcome-message">
+            <p><span class="welcome"><b>¡Bienvenido(a): </b></span> <span class="username">Nombre de usuario</span></p>
+           <div class="date"> Hoy es 28-09-2023</div>
+        </div>
+
+        <img src="assets\CrediMovilLogo.png" alt="Logo de la App" class="navbar-logo">
+       </nav>
+    </header>
+    <section>
+        <div class="title">Realizar Corrida</div>
+        <form style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="form">
+                <div class="left-side">
+                    <div class="field">
+                        <input type="text" name="currency" id="currency" required="required">
+                        <span>Seleccione la moneda*</span>
+                    </div>
+                    <div class="field">
+                        
+                        <input type="number" name="vehicle-value" id="vehicle-value" required="required">
+                        <span>Ingrese el valor del vehículo*</span>
+                    </div>
+                    <div class="field">
+                        <input type="number" name="initial-fee" id="initial-fee" required="required">
+                        <span>Ingrese el % de la cuota inicial*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="rate-type" id="rate-type" required="required">
+                        <span>Seleccione el tipo de la tasa*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="rate-time" id="rate-time" required="required">
+                        <span>Seleccione el tiempo de la tasa*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="capitalization-period" id="capitalization-period" required="required">
+                        <span>Periodo de capitalización*</span>
+                    </div>
+                    <div class="field">
+                        <input type="number" name="final-fee-percentage" id="final-fee-percentage" required="required">
+                        <span>Ingrese el % de la cuota final*</span>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="field">
+                        <input type="text" name="credit-term" id="credit-term" required="required">
+                        <span>Ingrese plazo de crédito en meses*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="pay-frequency" id="pay-frequency" required="required">
+                        <span>Ingrese la frecuencia de pago*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="rate-value" id="rate-value" required="required">
+                        <span>Ingrese el valor de la tasa*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="desg-insurance" id="desg-insurance" required="required">
+                        <span>Seguro de desgravamen*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="vehicle-insurance" id="vehicle-insurance" required="required">
+                        <span>Seleccione la tasa de seguro vehicular anual*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="grace-period" id="grace-period" required="required">
+                        <span>Periodo de gracia*</span>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="grace-period-term" id="grace-period-term" required="required">
+                        <span>Ingrese plazo de crédito en meses*</span>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <input type="button" value="Calcular Corrida">
+            </div>
+            
+        </form>
+    </section>
+</body>
+</html>
