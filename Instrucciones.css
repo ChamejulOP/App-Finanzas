@@ -1,0 +1,401 @@
+.toolbar-content {
+    display: flex;
+    justify-content: 100px;
+    width: 100%;
+}
+
+.toolbar-text {
+    margin-left: 20px; /* Ajusta el margen derecho según tus necesidades */
+}
+/* styles.css */
+/* Estilo personalizado para la barra de herramientas */
+.mat-toolbar{
+    background-color: #B74BB7;
+    color: white; /* Cambia el color del texto si es necesario */
+    height: 90px;
+}
+/*Estilos para el encabezado*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0;
+}
+/*--------Inicio - ubicar el icono de menu------------*/
+.container .btn-menu, .logo{
+    float: left;
+    line-height:125px;
+}
+
+/*--------Fin - ubicar el icono de menu------------*/
+
+.container .btn-menu span{
+    color: #ffffff;
+    font-size: 2.7rem;
+    cursor: pointer;
+}
+
+/*
+.container .menu{
+float: right;
+line-height: 100px;
+}
+.container .menu a{
+display: inline-block;
+padding: 15px;
+line-height: normal;
+text-decoration: none;
+color: #000000;
+transition: all 0.3s ease;
+border-bottom: 2px solid transparent;
+font-size: 15px;
+margin-right: 5px;
+}
+.container .menu a:hover{
+border-bottom: 2px solid #000000;
+padding-bottom: 5px;
+}*/
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #B74BB7;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+.cont-menu .sidebar ul li a{
+    display: block;
+    text-decoration: none;
+}
+/* Hacer mas alto*/
+
+
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu ul li:hover{
+    border-left: 5px solid #000000;
+    background: #B74BB7;
+}
+
+/* Mueve el boton una vez abierto el menu - Controlar las caracteristicas del icono del menú*/
+.cont-menu .sidebar label{ /* Antes era el .cont-menu label*/
+    position: absolute;
+    left: 13px;
+    top: 10px;
+    margin-top: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2.7rem;
+    line-height:65px;
+    margin-left: -1px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+/*
+.container-menu{
+position: absolute;
+background: rgba(0,0,0,0.5);
+width: 100%;
+height: 100vh;
+top: 0; left: 0;
+transition: all 500ms ease;
+opacity: 0;
+visibility: hidden;
+}*/
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*------------Esto también influye en las filas del menú - Sirve para organizar el contenido de cada fila-------*/
+.cont-menu .sidebar ul li{
+    display: block;
+    text-decoration: none;
+    padding: 6%;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    padding: 17px; /*Esto es para aumentar el tamaño de las filas*/
+}
+/*------------Fin - Esto también influye en las filas del menú - Sirve para organizar el contenido de cada fila-------*/
+
+/*---------Imagen una vez abierto el contenedor--------*/
+
+.cont-menu .sidebar .toolbar-content .toolbar-image {
+    width: 130px;
+    height: 130px;
+    margin-left: 40px;
+    margin-top: -35px;
+}
+
+/*---------Fin - Imagen una vez abierto el contenedor--------*/
+
+/*---------texto dentro de cada fila--------*/
+.cont-menu ul li a{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    text-align: left;
+}
+
+/*---------fin de texto dentro de cada fila--------*/
+
+
+.cont-menu ul li a span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*---------iconos--------*/
+.menu-icon.material-icons{
+    font-size: 25px;
+    margin-right:40px;
+}
+
+
+
+/*---------fin de iconos--------*/
+
+.cont-menu .sidebar ul li:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #B74BB7;
+}
+
+
+.cont-menu label{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.7rem;
+}
+
+
+.submenu {
+    display: none;
+    background-color: #B74BB7;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.menu-item:hover .submenu a {
+    color: #B74BB7;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-item:hover .submenu a:hover {
+    background-color: #555;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    position: relative;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+/* Estilos del menú desplegable */
+.sub-menu {
+    display: none;
+    background-color: #B74BB7;
+}
+
+.sidebar li:hover .sub-menu {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilos al pasar el mouse sobre los enlaces */
+
+/* Estilos para los submenús */
+.sub-menu li {
+    padding: 3px 0;
+    margin-left: 30px;
+}
+
+.toolbar-image {
+    width: 130px;
+    height: 130px;
+    margin-left: 80px;
+}
+
+/* ----------------------------------------------DASHBOARD------------------------------------------------------ */
+
+.mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ajusta el valor del índice z según sea necesario para que esté por encima de otros elementos */
+    height: 100px; /* Cambia el valor según tus necesidades */
+}
+.mat-toolbar button {
+    font-size: 18px; /* Ajusta el valor según el tamaño de fuente deseado */
+}
+
+.mat-toolbar img.toolbar-image {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: -185px;
+    margin-right: 80px;
+}
+
+/* Para el título o texto en el toolbar (por ejemplo, "Quienes somos" y "Beneficios") */
+.mat-toolbar .mat-button-wrapper {
+    font-size: 100px; /* Ajusta el valor según el tamaño de fuente deseado */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('/assets/fondo-menu.png'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5 ); /* Fondo semi-transparente si lo deseas */
+}
+.container-nuevo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 50px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    font-weight: bold; /* Hace las letras más gruesas */
+    color: black;
+
+}
+
+.welcome-message {
+    font-size: 20px;
+    margin-bottom: 100px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    color: white;
+    font-weight: bold; /* Hace las letras más gruesas */
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+
+h1 {
+    color: black; /* Cambia 'black' al color deseado */
+    text-align: center;
+}
+
+.subtitulo {
+    color: black; /* Cambia 'black' al color deseado */
+    text-align: center;
+}
